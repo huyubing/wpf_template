@@ -27,6 +27,18 @@ namespace WpfThemeSample
             };
 
             SampleListView.ItemsSource = sampleData;
+
+            // Populate ComboBox
+            var comboBoxItems = new ObservableCollection<string>
+            {
+                "Option 1 - Standard",
+                "Option 2 - Advanced",
+                "Option 3 - Professional",
+                "Option 4 - Enterprise",
+                "Option 5 - Custom"
+            };
+
+            SampleComboBox.ItemsSource = comboBoxItems;
         }
 
         private void ThemeA_Click(object sender, RoutedEventArgs e)
