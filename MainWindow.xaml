@@ -37,6 +37,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
@@ -117,9 +118,86 @@
                     </TabItem>
                 </TabControl>
 
+                <!-- Input Controls Section -->
+                <StackPanel Grid.Row="4" Margin="0,0,0,20">
+                    <TextBlock Text="Input Controls:"
+                              FontSize="16"
+                              FontWeight="Bold"
+                              Foreground="{DynamicResource Text0}"
+                              Margin="0,0,0,10"/>
+                    
+                    <!-- TextBox -->
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="TextBox:" 
+                                  Grid.Column="0"
+                                  VerticalAlignment="Center"
+                                  Foreground="{DynamicResource Text0}"/>
+                        <TextBox Grid.Column="1" 
+                                Text="Enter text here..."
+                                Width="300"
+                                HorizontalAlignment="Left"/>
+                    </Grid>
+                    
+                    <!-- ComboBox -->
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="ComboBox:" 
+                                  Grid.Column="0"
+                                  VerticalAlignment="Center"
+                                  Foreground="{DynamicResource Text0}"/>
+                        <ComboBox x:Name="SampleComboBox"
+                                 Grid.Column="1"
+                                 Width="300"
+                                 HorizontalAlignment="Left"
+                                 SelectedIndex="0"/>
+                    </Grid>
+                    
+                    <!-- Slider -->
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Slider:" 
+                                  Grid.Column="0"
+                                  VerticalAlignment="Center"
+                                  Foreground="{DynamicResource Text0}"/>
+                        <Slider Grid.Column="1"
+                               Width="300"
+                               HorizontalAlignment="Left"
+                               Minimum="0"
+                               Maximum="100"
+                               Value="50"/>
+                    </Grid>
+                    
+                    <!-- ProgressBar -->
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="ProgressBar:" 
+                                  Grid.Column="0"
+                                  VerticalAlignment="Center"
+                                  Foreground="{DynamicResource Text0}"/>
+                        <ProgressBar Grid.Column="1"
+                                    Width="300"
+                                    HorizontalAlignment="Left"
+                                    Value="65"
+                                    Maximum="100"/>
+                    </Grid>
+                </StackPanel>
+                
                 <!-- ListView Section -->
-                <StackPanel Grid.Row="4">
-                    <TextBlock Text="ListView with Sample Data:"
+                <StackPanel Grid.Row="5">
+                    <TextBlock Text="ListView with Styled Headers:"
                               FontSize="16"
                               FontWeight="Bold"
                               Foreground="{DynamicResource Text0}"
