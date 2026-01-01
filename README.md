@@ -12,7 +12,7 @@ A WPF (Windows Presentation Foundation) sample application demonstrating runtime
 
 - **Runtime Theme Switching**: Change themes dynamically without restarting the application
 - **Industrial Touch UI**: Optimized control sizes and spacing for touch interfaces
-- **Comprehensive Control Styles**: Includes styles for Menu, Button, CheckBox, RadioButton, ListBox, TabControl, and ListView
+- **Comprehensive Control Styles**: Includes styles for Menu, Button, CheckBox, RadioButton, ListBox, TabControl, ListView, ComboBox, TextBox, Slider, and ProgressBar with styled GridView column headers
 - **DynamicResource Bindings**: All color references use DynamicResource for seamless theme switching
 
 ## Project Structure
